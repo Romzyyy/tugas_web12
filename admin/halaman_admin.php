@@ -1,12 +1,9 @@
 <?php 
 	session_start();
- 
-	// cek apakah yang mengakses halaman ini sudah login
 	if($_SESSION['level']==""){
 		header("location:index.php?pesan=gagal");
 	}
- 
-	?>
+ ?>
 <!doctype html>
 <html lang="en">
 
@@ -36,7 +33,7 @@
         </div>
     </nav>
     <div class="container-fluid mt-5">
-        <h1 class="text-center mt-5 mb-5">Data Siswa</h1>
+        <h1 class="text-center mt-5 mb-5">Data Mahasiswa</h1>
         <div class="container-fluid w-75 position-relative">
             <a class="btn btn-success" href="admin_tambah.php" role="button">Add New</a>
             <table class="table position-absolute top-0 start-50 translate-middle-x mt-5 text-center">
